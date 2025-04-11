@@ -24,7 +24,7 @@ commentForm.addEventListener('submit', function(event) {
         const commentList = document.getElementById('lista_comentarios');
         const newComment = document.createElement('li');
         newComment.classList.add('list-group-item');
-        newComment.innerHTML = `<strong>${nombreText}</strong>: ${commentText}. <i>(${fechaTexto})</i>`;
+        newComment.innerHTML = `<strong>${nombreText}</strong>: ${commentText}. <i>(${fechaTexto})</i><br><button class="btn btn-danger btn-sm mt-2" onclick="this.parentElement.remove()">Eliminar</button>`;
         commentList.appendChild(newComment);
 
         nombreInput.value = '';
