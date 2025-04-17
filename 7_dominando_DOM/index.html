@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Generador de contraseñas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Generador de contraseñas</div>
+
+        <div class="password-display">
+            <span></span>
+            <span id="password"></span>
+            <button id="btn-copy-password">📋</button>
+        </div>
+
+        <div class="password-options">
+            <label>Longitud de caracteres: <span id="length-value">10</span></label>
+            <input type="range" min="4" max="20" value="10" id="length-slider">
+            
+            <div class="option"><input type="checkbox" id="upper" checked> Incluir mayusculas</div>
+            <div class="option"><input type="checkbox" id="lower" checked> Incluir minusculas</div>
+            <div class="option"><input type="checkbox" id="numbers" checked> Incluir numeros</div>
+            <div class="option"><input type="checkbox" id="symbols"> Incluir simbolos</div>
+        </div>
+
+        <div class="strength">
+            <span>Seguridad</span>
+            <span id="nivel">----</span>
+            <div class="bars">
+                <div class="bar" id="nvl-1"></div>
+                <div class="bar" id="nvl-2"></div>
+                <div class="bar" id="nvl-3"></div>
+                <div class="bar" id="nvl-4"></div>
+                <div class="bar" id="nvl-5"></div>
+            </div>
+        </div>
+
+        <button class="generate-btn" id="btn-generate-password">GENERAR →</button>
+    </div>
+
+    <script src="script_practica_campus.js"></script>
+</body>
+</html>

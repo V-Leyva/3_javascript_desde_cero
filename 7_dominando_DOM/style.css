@@ -1,0 +1,96 @@
+
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.password-display {
+    background-color: #2a2a2a;
+    color: #9efff0;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.password-options {
+    margin-bottom: 15px;
+}
+
+.option {
+    margin: 8px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bars {
+    display: flex;
+    gap: 4px;
+}
+
+.bar {
+    width: 10px;
+    height: 20px;
+    background-color: #888;
+    border-radius: 3px;
+}
+
+.bar.active {
+    background-color: #00ff88;
+}
+
+.generate-btn {
+    background-color: #8fffac;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #70e69b;
+}
+
+#btn-copy-password {
+    background:none;
+    border:none;
+    color:#8fffac;
+    cursor:pointer;
+}
